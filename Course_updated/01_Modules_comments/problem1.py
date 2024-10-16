@@ -1,4 +1,5 @@
 import os
+import pyttsx3
 
 # 1. print a poem
 
@@ -30,6 +31,11 @@ def table(n):
 # 3. external module
 # python3 -m pygame.examples.aliens
 
+engine = pyttsx3.init()
+engine.say('Hello this is a audio sample')
+engine.runAndWait()
+
+
 # 4 print the contents of a directory using os module
 
 # gets the current working directory path
@@ -38,3 +44,4 @@ print(cwd)
 
 # prints the files in specific directory
 print(os.listdir(cwd))
+
