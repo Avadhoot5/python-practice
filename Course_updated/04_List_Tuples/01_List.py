@@ -7,5 +7,8 @@ fruitList[0] = 'banana'
 
 print(fruitList[0])
 
+# List methods
 
+fruitList.append('appended Value')
+print(fruitList)
 
