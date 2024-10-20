@@ -25,4 +25,7 @@ print(my_dict.get('city'))
 # If the key does not exist, it raises a KeyError.
 print(my_dict['city'])
 
+# updates the key with new value, if key is not present new key value pair is added
+my_dict.update({'hobbies': my_dict['hobbies'] + ['sleeping'], 'newKey': 'newValue'})
 
+print(my_dict)

@@ -3,6 +3,8 @@
 # Properties
 # Unordered collection of different data types, Mutable, Indexed, cannot contain duplicate keys 
 
+emptyDict = {} #creates an empty dictionary
+
 marks = {
     'Student1': 100,
     'Student2': 80,
