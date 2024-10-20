@@ -32,14 +32,18 @@ else:
 
 # 3. detect spam messages
 
-# spamList = ['make a lot of money', 'buy now', 'subscribe this', 'click this']
+spamList = ['make a lot of money', 'buy now', 'subscribe this', 'click this']
 
-# userMessage = input('Spam detect message: ').lower()
+userMessage = input('Spam detect message: ').lower()
+isSpam = False
 
-# if (userMessage in spamList):
-#     print('SPAM! message found')
-# else:
-#     print('Not spam')
+for i in spamList:
+    if (i in userMessage):
+        isSpam = True
+if (isSpam):
+    print('Spam')
+else:
+    print('Not Spam')
 
 # 4. find a given username contains less than 10 characters or not.
 
@@ -63,18 +67,18 @@ else:
 
 # 6. calculate grade of students based on his marks
 
-markS = int(input('Enter your Total marks: '))
+# markS = int(input('Enter your Total marks: '))
 
-if (markS > 90 and markS <= 100):
-    print('Ex')
-elif (markS > 80 and markS <= 90):
-    print('A')
-elif (markS > 70 and markS <= 80):
-    print('B')
-elif (markS > 60 and markS <= 70):
-    print('C')
-elif (markS > 50 and markS <= 60):
-    print('D')
-elif (markS <= 50):
-    print('F')
+# if (markS > 90 and markS <= 100):
+#     print('Ex')
+# elif (markS > 80 and markS <= 90):
+#     print('A')
+# elif (markS > 70 and markS <= 80):
+#     print('B')
+# elif (markS > 60 and markS <= 70):
+#     print('C')
+# elif (markS > 50 and markS <= 60):
+#     print('D')
+# elif (markS <= 50):
+#     print('F')
 
