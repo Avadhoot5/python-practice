@@ -70,6 +70,14 @@ l = ['Harry', 'Soham', 'Sachin', 'Rahlul']
 # 7. print pyramid for n 
 # n = int(input('pyramid size ?: '))
 
+# # optimal method
+# for i in range(1, n+1):
+#     print(' ' * (n-i), end='')
+#     print('*' * (2*i-1), end='')
+#     print('')
+
+
+# My method 
 # str = ''
 # for i in range(0, n):
 #     for k in range(0, (n-i)):
@@ -91,22 +99,22 @@ l = ['Harry', 'Soham', 'Sachin', 'Rahlul']
 
 # 9. print square pattern
 
-n = int(input('pyramid size ?: '))
+# n = int(input('pyramid size ?: '))
 
-str = ''
-for i in range(n):
-    if (i == 0 or i == n-1):
-        for j in range(n):
-            str += '*'
-    else:
-        for j in range(n):
-            if (j == 0 or j == n-1):
-                str += '*'
-            else:
-                str += ' '
-    str += '\n'
+# str = ''
+# for i in range(n):
+#     if (i == 0 or i == n-1):
+#         for j in range(n):
+#             str += '*'
+#     else:
+#         for j in range(n):
+#             if (j == 0 or j == n-1):
+#                 str += '*'
+#             else:
+#                 str += ' '
+#     str += '\n'
 
-print(str)
+# print(str)
 
 
 # 10. print * table of n using for loops in reversed order
