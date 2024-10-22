@@ -1,0 +1,5 @@
+hello here are the contents of the file to read
+this is line 2 contents
+this is line 3 contents
+this is line 4 contents
+thank you!
