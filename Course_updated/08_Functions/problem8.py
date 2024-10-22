@@ -62,12 +62,12 @@ names = ["Alice","Bob","Charlie","Diana","Ethan","Fiona","George","Hannah","Isaa
 
 def removeWord(arr, word):
     newArr = []
-    for i in names:
+    for i in arr:
         if (i != word):
-            newArr.append(i)
+            newArr.append(i.rstrip(word))
     return newArr
 
-ans = removeWord(names, 'Bob')
+ans = removeWord(names, 'na')
 print(ans)
 
 
