@@ -37,13 +37,33 @@
 # answer = toh(3, 'A', 'B', 'C')
 # print(answer)
 
+# arr = []
+# for i in range(1, 11):
+#     arr.append(i)
 
-def printArr(n):
-    if (n == 0):
+# def printArr(arr, i):
+#     # faith index = 0. will print 0 to n-1
+#     # expectation. index = 1. print 1 to n-1
+#     # faith_exp. print(arr[currentIndex]). fn(i+1). i == arr.length return
+
+#     if (i == len(arr)):
+#         return
+#     print(arr[i])
+#     printArr(arr, i+1)
+
+# printArr(arr, 0)
+
+
+arr = [42,7,19,3,88,56,14,27,65,91]
+
+def maxArr(arr, i):
+    maxNum = arr[0]
+    maxNum = max(arr[i-1], arr[i])
+    maxArr(arr, i+1)
+    if (i == len(arr)):
+        print(maxNum)
         return
-    printArr(n-1)
-    print(n)
 
-printArr(50)
+# maxArr(arr, i)
 
-
+maxArr(arr, 1)
