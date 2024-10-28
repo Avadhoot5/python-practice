@@ -1,9 +1,10 @@
 class Employee:
-    language = 'Python'
-    salary = 120000
 
-    def __init__(self):
+    def __init__(self, name, salary, language): # dunder method, which is automatically called
         print('I"m creating an object')
+        self.name = name
+        self.salary = salary
+        self.language = language
 
     def getInfo(self):
         print(f"The language is {self.language}, and the salary is {self.salary}")
@@ -13,9 +14,8 @@ class Employee:
         print('Good morning')
 
 
-test = Employee()
-test.name = 'firstName'
-test.language = 'javascript'
+test = Employee('firstName', 1200000, 'Javascript')
 
-print(test.name, test.salary)
+print(test.name, test.salary, test.language)
+
 
