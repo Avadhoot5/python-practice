@@ -1,6 +1,6 @@
 class Employee:
     company = 'ITC'
-    name = 'test'
+    name = 'Default name'
     def show(self):
         print(f'The name of the employee is {self.name} and the company is {self.company}')
 
