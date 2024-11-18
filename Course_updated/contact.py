@@ -89,9 +89,9 @@ class ThreeDVector(TwoDVector):
     def show(self):
         print(f'3-D Vector is: {self.i}i + {self.j}j + {self.k}')
 
-b = TwoDVector(2,5)
-b.show()
+# b = TwoDVector(2,5)
+# b.show()
 
-a = ThreeDVector(4, 5, 8)
-a.show()
+# a = ThreeDVector(4, 5, 8)
+# a.show()
 
