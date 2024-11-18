@@ -53,17 +53,20 @@
 
 # printArr(arr, 0)
 
+# operator overloading
 
-arr = [42,7,19,3,88,56,14,27,65,91]
+class Number:
+    def __init__(self, n):
+        self.n = n
+    
+    def __add__(self, num):
+        return self.n + num.n
+    
+    def __mul__(self, num):
+        return self.n * num.n
 
-def maxArr(arr, i):
-    maxNum = arr[0]
-    maxNum = max(arr[i-1], arr[i])
-    maxArr(arr, i+1)
-    if (i == len(arr)):
-        print(maxNum)
-        return
+# a = Number(1)
+# b = Number(2)
 
-# maxArr(arr, i)
-
-maxArr(arr, 1)
+# print(a+b)
+# print(a*b)
